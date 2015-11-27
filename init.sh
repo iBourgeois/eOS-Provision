@@ -2,12 +2,18 @@
 
 # Install Arc Theme
 echo '|========== Installing Arc Theme ==========|'
+
+wget http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_15.04/Release.key
+sudo apt-key add - < Release.key
+
 sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_15.04/ /' >> /etc/apt/sources.list.d/arc-theme.list"
 sudo apt-get update
 sudo apt-get install arc-theme
-wget http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_15.04/Release.key
-sudo apt-key add - < Release.key 
+
 echo '|========== Arc Theme Installed ==========|'
+echo '|========== Activating Arc Theme ==========|'
+
+echo '|========== Arc Theme Activated ==========|'
 
 # Install Numix Icons
 echo '|========== Installing Numix Icons ==========|'
