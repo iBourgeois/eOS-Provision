@@ -6,7 +6,9 @@
     sudo apt-key add - < Release.key
     # Google Chrome
     wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
-
+    # VirtualBox
+    wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+    
 # Add Repositories
     # Arc Theme
     sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_15.04/ /' >> /etc/apt/sources.list.d/arc-theme.list"
@@ -18,6 +20,8 @@
     sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
     # Atom
     sudo add-apt-repository -y ppa:webupd8team/atom
+    # VirtualBox
+    sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian vivid contrib" >> /etc/apt/sources.list.d/virtualbox.list'
     
 # Update && Upgrade
 sudo apt-get update && sudo apt-get upgrade -y
@@ -61,7 +65,7 @@ echo '|========== Atom Installed ==========|'
 
 # Install VirtualBox
 echo '|========== Installing VirtualBox ==========|'
-sudo apt-get install -y virtualbox
+sudo apt-get install -y virtualbox-5.0
 echo '|========== VirtualBox Installed ==========|'
 
 # Install Vagrant
