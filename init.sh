@@ -14,6 +14,8 @@
     sudo add-apt-repository -y ppa:numix/ppa
     # Google Chrome
     sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+    # Sublime Text 3
+    sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
     
 # Update && Upgrade
 sudo apt-get update && sudo apt-get upgrade -y
@@ -40,7 +42,10 @@ echo '|========== Installing Git ==========|'
 sudo apt-get install -y git
 echo '|========== Git Installed ==========|'
 
-# Install Sublime Text
+# Install Sublime Text 3
+echo '|========== Installing Sublime Text 3 ==========|'
+sudo apt-get install -y sublime-text-installer
+echo '|========== Sublime Text 3 Installed ==========|'
 
 # Install Atom
 
