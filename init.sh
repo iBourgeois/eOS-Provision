@@ -54,7 +54,7 @@ echo '|========== Git Installed ==========|'
 
 # Install Google Chrome
 echo '|========== Installing Google Chrome ==========|'
-sudo apt-get install google-chrome-stable
+sudo apt-get install -y google-chrome-stable
 echo '|========== Google Chrome Installed ==========|'
 
 # Install Firefox
