@@ -20,6 +20,8 @@ echo '|========== Installing Numix Icons ==========|'
 
 echo '|========== Numix Icons Installed ==========|'
 
+# Install Git
+
 # Install Sublime Text
 
 # Install Atom
