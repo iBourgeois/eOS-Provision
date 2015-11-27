@@ -3,7 +3,7 @@ Script to provision a new Elementary OS install.
 
 # What it does
 - [x] Installs Arc Theme
-- [ ] Installs Atom
+- [x] Installs Atom
 - [x] Installs Bash Aliases
 - [x] Installs BleachBit
 - [ ] Installs Docker
