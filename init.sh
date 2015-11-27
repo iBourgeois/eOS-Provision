@@ -69,7 +69,11 @@ echo '|========== VirtualBox Installed ==========|'
 
 # Install Vagrant
 echo '========== Installing Vagrant =========='
-sudo apt-get install -y vagrant
+wget https://releases.hashicorp.com/vagrant/1.7.4/vagrant_1.7.4_x86_64.deb
+sudo dpkg -i vagrant_1.7.4_x86_64.deb
+sudo apt-get install -y linux-headers-$(uname -r)
+sudo dpkg-reconfigure virtualbox-dkms
+
 echo '========== Vagrant Installed =========='
 
 # Install VisualStudio Code
