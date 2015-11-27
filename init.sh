@@ -77,3 +77,52 @@ echo '|========== FireFox Installed ==========|'
 # Install WireShark
 
 # Install VLC
+
+# Build Bash Profile
+echo '|========== Building Bash Profile ==========|'
+
+echo -e "alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+alias c='clear'
+alias h='cd ~/'
+alias hc='h && c'
+alias back='cd $OLDPWD'
+
+alias ff='find . -type f -name'
+alias fd='find . -type d -name'
+
+alias now='date +%T'
+
+alias add='subl ~/.bash_aliases'
+alias reload='source ~/.bashrc && clear'
+alias install='sudo apt-get install'
+alias remove='sudo apt-get remove'
+alias orphand='sudo deborphan | xargs sudo apt-get -y remove --purge'
+alias cleanup='sudo apt-get autoclean && sudo apt-get autoremove && sudo apt-get clean && sudo apt-get remove && orphand'
+alias update='sudo apt-get update'
+alias upgrade='sudo apt-get upgrade'
+
+extract () {
+    if [ -f $1 ] ; then
+        case $1 in
+            *.tar.bz2)   tar xvjf $1    ;;
+            *.tar.gz)    tar xvzf $1    ;;
+            *.bz2)       bunzip2 $1     ;;
+            *.rar)       rar x $1       ;;
+            *.gz)        gunzip $1      ;;
+            *.tar)       tar xvf $1     ;;
+            *.tbz2)      tar xvjf $1    ;;
+            *.tgz)       tar xvzf $1    ;;
+            *.zip)       unzip $1       ;;
+            *.Z)         uncompress $1  ;;
+            *.7z)        7z x $1        ;;
+            *)           echo \"don't know how to extract '$1'...\" ;;
+        esac
+    else
+        echo "'$1' is not a valid file!"
+    fi
+}" > ~/.bash_aliases
+
+echo '|========== Bash Profile Built ==========|'
