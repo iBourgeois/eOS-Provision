@@ -2,10 +2,9 @@
 
 # Add Repository Keys
     # Arc Theme
-    wget http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_15.04/Release.key
-    sudo apt-key add - < Release.key
+    wget -q http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_15.04/Release.key | sudo apt-key add - 
     # Google Chrome
-    wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+    wget -q https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
     # VirtualBox
     wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
     
