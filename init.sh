@@ -47,6 +47,9 @@ echo '|========== Git Installed ==========|'
 # Install Docker
 
 # Install VirtualBox
+echo '|========== Installing VirtualBox ==========|'
+sudo apt-get install -y virtualbox
+echo '|========== VirtualBox Installed ==========|'
 
 # Install Vagrant
 
