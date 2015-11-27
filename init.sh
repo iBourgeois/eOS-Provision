@@ -13,6 +13,9 @@ sudo apt-get install arc-theme
 echo '|========== Arc Theme Installed ==========|'
 echo '|========== Activating Arc Theme ==========|'
 
+gsettings set org.gnome.desktop.interface gtk-theme "Arc-Darker"
+gsettings set org.gnome.desktop.wm.preferences theme "Arc-Darker"
+
 echo '|========== Arc Theme Activated ==========|'
 
 # Install Numix Icons
