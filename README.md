@@ -6,13 +6,13 @@ Script to provision a new Elementary OS install.
 - It installs and activates the Arc theme
 - It installs and activates the Numix icons
 - It installs Git
+- It installs Sublime Text 3
 - It installs Google Chrome
 - It installs FireFox and the FireFox Launchpad Plugin
 - It installs VirtualBox
 - It builds a useful `.bash_aliases` file
 
 # What it will do in the future
-- Install Sublime Text
 - Install Atom
 - Install VisualStudio Code
 - Install Docker
@@ -28,3 +28,6 @@ Script to provision a new Elementary OS install.
 - Install BleachBit
 - Install WireShark
 - Install VLC
+
+-[ ] Installs Atom
+-[x] Installs FireFox
