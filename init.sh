@@ -54,6 +54,11 @@ echo '|========== Git Installed ==========|'
 # Install Google Chrome
 
 # Install Firefox
+echo '|========== Installing FireFox ==========|'
+
+sudo apt-get install -y firefox firefox-launchpad-plugin 
+
+echo '|========== FireFox Installed ==========|'
 
 # Install FileZilla
 
