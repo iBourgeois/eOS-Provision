@@ -8,7 +8,7 @@ sudo apt-key add - < Release.key
 
 sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_15.04/ /' >> /etc/apt/sources.list.d/arc-theme.list"
 sudo apt-get update
-sudo apt-get install arc-theme
+sudo apt-get install -y arc-theme
 
 echo '|========== Arc Theme Installed ==========|'
 echo '|========== Activating Arc Theme ==========|'
@@ -21,7 +21,16 @@ echo '|========== Arc Theme Activated ==========|'
 # Install Numix Icons
 echo '|========== Installing Numix Icons ==========|'
 
+sudo add-apt-repository ppa:numix/ppa
+sudo apt-get update
+sudo apt-get install -y numix-icon-theme-circle
+
 echo '|========== Numix Icons Installed ==========|'
+echo '|========== Activating Numix Icons ==========|'
+
+gsettings set org.gnome.desktop.interface icon-theme "Numix-Circle"
+
+echo '|========== Numix Icons Activated ==========|'
 
 # Install Git
 
