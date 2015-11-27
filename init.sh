@@ -16,6 +16,8 @@
     sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
     # Sublime Text 3
     sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
+    # Atom
+    sudo add-apt-repository -y ppa:webupd8team/atom
     
 # Update && Upgrade
 sudo apt-get update && sudo apt-get upgrade -y
@@ -51,6 +53,9 @@ cd ~/ && wget -O ".config/sublime-text-3/Packages/Package Control.sublime-packag
 echo '|========== Package Control Installed ==========|'
 
 # Install Atom
+echo '|========== Installing Atom ==========|'
+sudo apt-get install -y atom
+echo '|========== Atom Installed ==========|'
 
 # Install Docker
 
