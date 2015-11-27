@@ -18,6 +18,7 @@ Script to provision a new Elementary OS install.
 - [x] Installs MySQL Workbench
 - [x] Installs Numix Icons
 - [ ] Installs Skype
+- [x] Installs Sublime Text 3 (with Package Control)
 - [ ] Installs TeamViewer
 - [x] Installs Updates
 - [x] Installs Vagrant
