@@ -57,6 +57,9 @@ sudo apt-get install -y virtualbox
 echo '|========== VirtualBox Installed ==========|'
 
 # Install Vagrant
+echo '========== Installing Vagrant =========='
+sudo apt-get install -y vagrant
+echo '========== Vagrant Installed =========='
 
 # Install VisualStudio Code
 
@@ -71,10 +74,19 @@ sudo apt-get install -y firefox firefox-launchpad-plugin
 echo '|========== FireFox Installed ==========|'
 
 # Install FileZilla
+echo '========== Installing FileZilla =========='
+sudo apt-get install -y filezilla
+echo '========== FileZilla Installed =========='
 
 # Install MySQL Workbench
+echo '========== Installing MySQL Workbench =========='
+sudo apt-get install -y mysql-workbench
+echo '========== MySQL Workbench Installed =========='
 
 # Install Minetest
+echo '========== Installing Minetest =========='
+sudo apt-get install -y minetest
+echo '========== Minetest Installed =========='
 
 # Install Google Music Manager
 
@@ -83,10 +95,19 @@ echo '|========== FireFox Installed ==========|'
 # Install TeamViewer
 
 # Install BleachBit
+echo '========== Installing BleachBit =========='
+sudo apt-get install -y bleachbit
+echo '========== BleachBit Installed =========='
 
-# Install WireShark
+# Install Wireshark
+echo '========== Installing Wireshark =========='
+sudo apt-get install -y wireshark
+echo '========== Wireshark Installed =========='
 
 # Install VLC
+echo '========== Installing VLC =========='
+sudo apt-get install -y vlc
+echo '========== VLC Installed =========='
 
 # Build Bash Profile
 echo '|========== Building Bash Profile ==========|'
