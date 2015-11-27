@@ -33,6 +33,11 @@ gsettings set org.gnome.desktop.interface icon-theme "Numix-Circle"
 echo '|========== Numix Icons Activated ==========|'
 
 # Install Git
+echo '|========== Installing Git ==========|'
+
+sudo apt-get install -y git
+
+echo '|========== Git Installed ==========|'
 
 # Install Sublime Text
 
