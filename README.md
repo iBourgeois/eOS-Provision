@@ -29,5 +29,5 @@ Script to provision a new Elementary OS install.
 - Install WireShark
 - Install VLC
 
--[ ] Installs Atom
--[x] Installs FireFox
+- [ ] Installs Atom
+- [x] Installs FireFox
