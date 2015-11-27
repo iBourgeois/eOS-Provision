@@ -4,12 +4,16 @@
     # Arc Theme
     wget http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_15.04/Release.key
     sudo apt-key add - < Release.key
+    # Google Chrome
+    wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
 
 # Add Repositories
     # Arc Theme
     sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_15.04/ /' >> /etc/apt/sources.list.d/arc-theme.list"
     # Numix Theme
     sudo add-apt-repository -y ppa:numix/ppa
+    # Google Chrome
+    sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
     
 # Update && Upgrade
 sudo apt-get update && sudo apt-get upgrade -y
@@ -49,6 +53,9 @@ echo '|========== Git Installed ==========|'
 # Install VisualStudio Code
 
 # Install Google Chrome
+echo '|========== Installing Google Chrome ==========|'
+sudo apt-get install google-chrome-stable
+echo '|========== Google Chrome Installed ==========|'
 
 # Install Firefox
 echo '|========== Installing FireFox ==========|'
