@@ -61,6 +61,9 @@ sudo apt-get install -y atom
 echo '|========== Atom Installed ==========|'
 
 # Install Docker
+echo '|========== Installing Docker ==========|'
+wget -qO- https://get.docker.com/ | sudo sh
+echo '|========== Docker Installed ==========|'
 
 # Install VirtualBox
 echo '|========== Installing VirtualBox ==========|'
