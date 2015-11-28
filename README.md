@@ -1,34 +1,39 @@
 # eOS-Provision
 Script to provision a new Elementary OS install.
 
-# Install/Run
+# Install/Run Developer Mode
 ```
-wget https://raw.githubusercontent.com/iBourgeois/eOS-Provision/master/init.sh | sudo sh
+wget https://raw.githubusercontent.com/iBourgeois/eOS-Provision/master/dev.sh | sudo sh
+```
+
+# Install/Run Child Mode
+```
+wget https://raw.githubusercontent.com/iBourgeois/eOS-Provision/master/kid.sh | sudo sh
 ```
 
 # What it does
-- [x] Installs Arc Theme (Activated)
-- [x] Installs Atom
+- [x] Installs Arc theme (Activated in Developer Mode)
+- [x] Developer Mode installs Atom
 - [x] Installs Bash Aliases
 - [x] Installs BleachBit
-- [x] Installs Docker
-- [ ] Installs Dropbox
-- [x] Installs FileZilla
-- [x] Installs FireFox
-- [x] Installs Git
-- [x] Installs Google Chrome
-- [ ] Installs Google Drive
-- [ ] Installs Google Music Manager
+- [x] Developer Mode installs Docker
+- [ ] Developer Mode installs Dropbox
+- [x] Developer Mode installs FileZilla
+- [x] Developer Mode installs FireFox
+- [x] Developer Mode installs Git
+- [x] Developer Mode installs Google Chrome
+- [ ] Developer Mode installs Google Drive
+- [ ] Developer Mode installs Google Music Manager
 - [x] Installs Minetest
-- [x] Installs MySQL Workbench
+- [x] Developer Mode installs MySQL Workbench
 - [x] Installs Numix Icons (Activated)
-- [x] Installs Paper Theme (Not Activated)
-- [ ] Installs Skype
-- [x] Installs Sublime Text 3 (with Package Control)
-- [x] Installs TeamViewer
+- [x] Installs Paper Theme (Activated in Child Mode)
+- [ ] Developer Mode installs Skype
+- [x] Developer Mode installs Sublime Text 3 (with Package Control)
+- [x] Developer Mode installs TeamViewer
 - [x] Installs Updates
-- [x] Installs Vagrant
-- [x] Installs VirtualBox
-- [ ] Installs VisualStudio Code
-- [x] Installs VLC
-- [x] Installs Wireshark
+- [x] Developer Mode installs Vagrant
+- [x] Developer Mode installs VirtualBox
+- [ ] Developer Mode installs VisualStudio Code
+- [x] Developer Mode installs VLC
+- [x] Developer Mode installs Wireshark
