@@ -1,12 +1,17 @@
 # eOS-Provision
 Script to provision a new Elementary OS install.
 
+# Install/Run
+```
+wget https://raw.githubusercontent.com/iBourgeois/eOS-Provision/master/init.sh | sudo sh
+```
+
 # What it does
 - [x] Installs Arc Theme
 - [x] Installs Atom
 - [x] Installs Bash Aliases
 - [x] Installs BleachBit
-- [ ] Installs Docker
+- [x] Installs Docker
 - [ ] Installs Dropbox
 - [x] Installs FileZilla
 - [x] Installs FireFox
