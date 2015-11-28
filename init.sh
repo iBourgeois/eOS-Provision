@@ -16,6 +16,8 @@ echo '|========== Repository Keys Installed ==========|'
 echo '|========== Installing Repositories ==========|'
     # Arc Theme
     sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_15.04/ /' >> /etc/apt/sources.list.d/arc-theme.list"
+    # Paper Theme
+    sudo add-apt-repository -y ppa:snwh/pulp
     # Numix Theme
     sudo add-apt-repository -y ppa:numix/ppa
     # Google Chrome
@@ -31,6 +33,11 @@ echo '|========== Reositories Installed ==========|'
 # Update && Upgrade
 sudo apt-get update && sudo apt-get upgrade -y
 
+# Install Paper Theme
+echo '|========== Installing Paper Theme ==========|'
+sudo apt-get install -y paper-gtk-theme
+echo '|========== Paper Theme Installed ==========|'
+
 # Install Arc Theme
 echo '|========== Installing Arc Theme ==========|'
 sudo apt-get install -y arc-theme
@@ -42,7 +49,7 @@ echo '|========== Arc Theme Activated ==========|'
 
 # Install Numix Icons
 echo '|========== Installing Numix Icons ==========|'
-sudo apt-get install -y numix-icon-theme-circle
+sudo apt-get install -y numix-icon-theme-circle numix-folders numix-tools
 echo '|========== Numix Icons Installed ==========|'
 echo '|========== Activating Numix Icons ==========|'
 gsettings set org.gnome.desktop.interface icon-theme "Numix-Circle"
