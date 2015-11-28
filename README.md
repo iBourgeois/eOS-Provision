@@ -24,7 +24,7 @@ wget https://raw.githubusercontent.com/iBourgeois/eOS-Provision/master/init.sh |
 - [x] Installs Numix Icons
 - [ ] Installs Skype
 - [x] Installs Sublime Text 3 (with Package Control)
-- [ ] Installs TeamViewer
+- [x] Installs TeamViewer
 - [x] Installs Updates
 - [x] Installs Vagrant
 - [x] Installs VirtualBox
