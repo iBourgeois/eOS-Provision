@@ -1,14 +1,19 @@
 #!/bin/bash
 
+# Check to see if Repositories have been added
+
 # Add Repository Keys
+echo '|========== Installing Repository Keys ==========|'
     # Arc Theme
     wget -q http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_15.04/Release.key | sudo apt-key add - 
     # Google Chrome
     wget -q https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
     # VirtualBox
     wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
-    
+echo '|========== Repository Keys Installed ==========|'
+
 # Add Repositories
+echo '|========== Installing Repositories ==========|'
     # Arc Theme
     sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_15.04/ /' >> /etc/apt/sources.list.d/arc-theme.list"
     # Numix Theme
@@ -21,7 +26,8 @@
     sudo add-apt-repository -y ppa:webupd8team/atom
     # VirtualBox
     sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian vivid contrib" >> /etc/apt/sources.list.d/virtualbox.list'
-    
+echo '|========== Reositories Installed ==========|'
+
 # Update && Upgrade
 sudo apt-get update && sudo apt-get upgrade -y
 
@@ -72,12 +78,12 @@ sudo apt-get install -y virtualbox-5.0
 echo '|========== VirtualBox Installed ==========|'
 
 # Install Vagrant
-echo '========== Installing Vagrant =========='
+echo '|========== Installing Vagrant ==========|'
 wget https://releases.hashicorp.com/vagrant/1.7.4/vagrant_1.7.4_x86_64.deb
 sudo dpkg -i vagrant_1.7.4_x86_64.deb
 sudo apt-get install -y linux-headers-$(uname -r)
 sudo dpkg-reconfigure virtualbox-dkms
-echo '========== Vagrant Installed =========='
+echo '|========== Vagrant Installed ==========|'
 
 # Install VisualStudio Code
 
@@ -92,40 +98,44 @@ sudo apt-get install -y firefox firefox-launchpad-plugin
 echo '|========== FireFox Installed ==========|'
 
 # Install FileZilla
-echo '========== Installing FileZilla =========='
+echo '|========== Installing FileZilla ==========|'
 sudo apt-get install -y filezilla
-echo '========== FileZilla Installed =========='
+echo '|========== FileZilla Installed ==========|'
 
 # Install MySQL Workbench
-echo '========== Installing MySQL Workbench =========='
+echo '|========== Installing MySQL Workbench ==========|'
 sudo apt-get install -y mysql-workbench
-echo '========== MySQL Workbench Installed =========='
+echo '|========== MySQL Workbench Installed ==========|'
 
 # Install Minetest
-echo '========== Installing Minetest =========='
+echo '|========== Installing Minetest ==========|'
 sudo apt-get install -y minetest
-echo '========== Minetest Installed =========='
+echo '|========== Minetest Installed ==========|'
 
 # Install Google Music Manager
 
 # Install Skype
 
 # Install TeamViewer
+echo '|========== Installing TeamViewer ==========|'
+wget "http://download.teamviewer.com/download/teamviewer_i386.deb" 
+sudo dpkg -i teamviewer_i386.deb
+echo '|========== TeamViewer Installed ==========|'
 
 # Install BleachBit
-echo '========== Installing BleachBit =========='
+echo '|========== Installing BleachBit ==========|'
 sudo apt-get install -y bleachbit
-echo '========== BleachBit Installed =========='
+echo '|========== BleachBit Installed ==========|'
 
 # Install Wireshark
-echo '========== Installing Wireshark =========='
+echo '|========== Installing Wireshark ==========|'
 sudo apt-get install -y wireshark
-echo '========== Wireshark Installed =========='
+echo '|========== Wireshark Installed ==========|'
 
 # Install VLC
-echo '========== Installing VLC =========='
+echo '|========== Installing VLC ==========|'
 sudo apt-get install -y vlc
-echo '========== VLC Installed =========='
+echo '|========== VLC Installed ==========|'
 
 # Build Bash Profile
 echo '|========== Building Bash Profile ==========|'
