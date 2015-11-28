@@ -58,7 +58,7 @@ echo '|========== Installing Sublime Text 3 ==========|'
 sudo apt-get install -y sublime-text-installer
 echo '|========== Sublime Text 3 Installed ==========|'
 echo '|========== Installing Package Control ==========|'
-cd ~/ && wget -O ".config/sublime-text-3/Packages/Package Control.sublime-package" https://packagecontrol.io/Package%20Control.sublime-package
+cd ~/ && wget -O ".config/sublime-text-3/Installed Packages/Package Control.sublime-package" https://packagecontrol.io/Package%20Control.sublime-package
 echo '|========== Package Control Installed ==========|'
 
 # Install Atom
