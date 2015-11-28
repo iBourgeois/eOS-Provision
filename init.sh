@@ -63,6 +63,7 @@ echo '|========== Atom Installed ==========|'
 # Install Docker
 echo '|========== Installing Docker ==========|'
 wget -qO- https://get.docker.com/ | sudo sh
+sudo usermod -aG docker $(whoami)
 echo '|========== Docker Installed ==========|'
 
 # Install VirtualBox
@@ -76,7 +77,6 @@ wget https://releases.hashicorp.com/vagrant/1.7.4/vagrant_1.7.4_x86_64.deb
 sudo dpkg -i vagrant_1.7.4_x86_64.deb
 sudo apt-get install -y linux-headers-$(uname -r)
 sudo dpkg-reconfigure virtualbox-dkms
-
 echo '========== Vagrant Installed =========='
 
 # Install VisualStudio Code
