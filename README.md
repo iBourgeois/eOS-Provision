@@ -7,7 +7,7 @@ wget https://raw.githubusercontent.com/iBourgeois/eOS-Provision/master/init.sh |
 ```
 
 # What it does
-- [x] Installs Arc Theme
+- [x] Installs Arc Theme (Activated)
 - [x] Installs Atom
 - [x] Installs Bash Aliases
 - [x] Installs BleachBit
@@ -21,7 +21,8 @@ wget https://raw.githubusercontent.com/iBourgeois/eOS-Provision/master/init.sh |
 - [ ] Installs Google Music Manager
 - [x] Installs Minetest
 - [x] Installs MySQL Workbench
-- [x] Installs Numix Icons
+- [x] Installs Numix Icons (Activated)
+- [x] Installs Paper Theme (Not Activated)
 - [ ] Installs Skype
 - [x] Installs Sublime Text 3 (with Package Control)
 - [x] Installs TeamViewer
